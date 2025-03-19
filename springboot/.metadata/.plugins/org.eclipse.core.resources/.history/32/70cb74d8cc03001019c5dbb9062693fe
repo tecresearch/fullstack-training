@@ -1,0 +1,18 @@
+import { loadEmployeeDelete } from './empopup.js';
+export function popupEmployeeName() {
+	$.ajax({
+		url: "/employee-timetracker/admin/employee/employee-list", 
+		type: "GET",
+		success: function(response) {
+			let deptDropdown = $("#empId");
+			deptDropdown.empty();
+			for (let key in response) {
+				deptDropdown.append('<option value="' + key + '">' + response[key] + '</option>')
+			}
+		},
+		error: function() {
+			console.error("AJAX Error:", error);
+		}
+	});
+}
+

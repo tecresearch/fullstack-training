@@ -1,0 +1,26 @@
+package com.cetpa;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class App 
+{
+	public static void main(String[] args) 
+	{
+		SessionFactory factory=new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+		Session session=factory.openSession();
+		Transaction tr=session.getTransaction();
+		tr.begin();
+		session.save(new Employee(101,"Amit Singh","Sales",60000));
+		session.persist(new Employee(102,"Manoj Mishra","Marketing",70000));
+		session.persist(new Employee(103,"Imran Ahmad","Accounts",56000));
+		session.persist(new Employee(104,"Ravi Yadav","Marketing",67000));
+		session.persist(new Employee(105,"Suman Singh","Sales",90000));
+		session.persist(new Employee(106,"Hemant Verma","Accounts",59000));
+		session.persist(new Employee(107,"Anuj Pandey","Sales",50000));
+		session.persist(new Employee(108,"Ramesh Arora","Marketing",89000));
+		tr.commit();
+	}
+}

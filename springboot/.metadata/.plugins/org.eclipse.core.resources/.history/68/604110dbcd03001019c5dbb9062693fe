@@ -1,0 +1,6 @@
+$(document).ready(function() {
+	$("#recordTimeOut").click(function() {
+		alert("ok")
+		popupEmployeeName()
+	});
+});

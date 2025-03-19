@@ -1,0 +1,5 @@
+package timetracker.user.entity;
+
+public class TimeInfo {
+
+}

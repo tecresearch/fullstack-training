@@ -1,0 +1,21 @@
+package com.cetpa;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class App 
+{
+	public static void main(String[] args) 
+	{
+		SessionFactory factory=new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+		Session session=factory.openSession();
+		Transaction tr=session.getTransaction();
+		tr.begin();
+		Person person1=new Person("Amit Singh","4455667788","Noida");
+		Person person2=new Person("","4455667788","Noida");
+		Person person3=new Person("Amit Singh","4455667788","Noida");
+		tr.commit();
+	}
+}

@@ -1,0 +1,4 @@
+<link th:href="@{/CSS/bootstrap.min.css}" rel="stylesheet">
+<link th:href="@{/CSS/timetracker.css?v=2.0}" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script th:src="@{/JS/ajax.js?v=2.0}" type="module"></script>

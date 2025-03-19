@@ -1,0 +1,30 @@
+package com.cetpa;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class App 
+{
+	public static void main(String[] args) 
+	{
+		SessionFactory factory=new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+		Session session=factory.openSession();
+		Transaction tr=session.getTransaction();
+		tr.begin();
+		List<Employee> list=new ArrayList<Employee>();
+		list.add(new Employee("Amit Singh","6677889900","Noida",80000));
+		list.add(new Employee("Imran Ahmad","9977889900","Noida",78000));
+		session.persist(new Department("Sales","Ravi",list));
+		list.clear();
+		list.add(new Employee("Hemant Yadav","6677889900","Noida",57000));
+		list.add(new Employee("Neha Singh","9977889900","Lucknow",90000));
+		list.add(new Employee("Rakesh Pandey","9977889900","Agra",70000));
+		session.persist(new Department("Marketing","Vikas",list));
+		tr.commit();
+	}
+}

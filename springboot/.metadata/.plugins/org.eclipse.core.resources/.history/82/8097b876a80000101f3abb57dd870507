@@ -1,0 +1,55 @@
+package timetracker.admin.service;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.stereotype.Service;
+
+import timetracker.admin.entity.Employee;
+import timetracker.admin.repository.EmployeeRepository;
+
+@Service
+public class EmployeeServiceImpl implements EmployeeService
+{
+	private EmployeeRepository employeeRepository;
+	public EmployeeServiceImpl(EmployeeRepository employeeRepository)
+	{
+		this.employeeRepository=employeeRepository;
+	}
+	public void saveEmployee(Employee employee) 
+	{
+		employeeRepository.save(employee);
+	}
+	public List<Employee> getList()
+	{
+		return employeeRepository.findAll();
+	}
+	public Employee getEmployee(int eid)
+	{
+		return employeeRepository.findById(eid).orElse(null);
+	}
+	public Map<String, Object> getEmployeeById(int eid) 
+	{
+		Employee emp=employeeRepository.findById(eid).orElse(null);
+		Map<String,Object> map=new HashMap<>();
+		if(emp==null)
+			map.put("msg","Employee does not exist");
+		else
+		{
+			map.put("firstname",emp.getFirstname());
+			map.put("lastname",emp.getLastname());
+			map.put("email",emp.getEmail());
+			map.put("phone",emp.getPhone());
+			map.put("deptId",emp.getDeptId());
+			map.put("roleId",emp.getRoleId());
+			map.put("timein",emp.getTimein());
+			map.put("timeout",emp.getTimeout());
+		}
+		return map;
+	}
+	public void deleteEmployee(int eid) 
+	{
+		employeeRepository.deleteById(eid);
+	}
+}

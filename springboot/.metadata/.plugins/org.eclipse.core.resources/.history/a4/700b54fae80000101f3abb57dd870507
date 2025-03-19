@@ -1,0 +1,25 @@
+import { popupAddDepartment} from './emppopup.js'; 
+export function loadEmployeeEdit() {
+	$.ajax({
+		url: "/employee-timetracker/admin/employee/get-employee?eid=" + document.getElementById("editEid").value,
+		type: "GET",
+		success: function(response) {
+			if (response.msg != null) {
+				alert(response.msg);
+			}
+			else {
+				document.getElementById("employeeEditDetails").style.display = "block";
+				popupEditDepartment();
+				for (let key in response) {
+					document.getElementById(key).value = response[key];
+					if(key=="department"){
+						document.getElementById("edepartment").value=response[key];
+					}
+				}
+			}
+		},
+		error: function() {
+			console.error("AJAX Error: " + error);
+		}
+	});
+}

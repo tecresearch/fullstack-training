@@ -1,0 +1,3 @@
+INDEX VERSION 1.134
+C:\CETPA\2024\java\weekdays\new\adv\12-2\frameworks\hibernate\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1554114462.index
+\employee-management\src\main\resources

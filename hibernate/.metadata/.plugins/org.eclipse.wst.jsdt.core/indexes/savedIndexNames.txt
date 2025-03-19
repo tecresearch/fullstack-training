@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\CETPA\2024\java\weekdays\new\adv\12-2\frameworks\hibernate\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+670998967.index
+3858934419.index
+1602748738.index
+2974558131.index
+707104068.index
+1726468103.index

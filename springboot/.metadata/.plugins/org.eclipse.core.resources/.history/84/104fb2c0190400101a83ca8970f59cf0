@@ -1,0 +1,11 @@
+package timetracker.user.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import timetracker.admin.entity.User;
+import timetracker.user.entity.TimeInfo;
+
+public interface TimeInfoRepository extends JpaRepository<TimeInfo,Integer>
+{
+	
+}

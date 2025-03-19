@@ -1,0 +1,33 @@
+export function popupEmployeeOutName() {
+	$.ajax({
+		url: "/employee-timetracker/user/time/employee-inlist", 
+		type: "GET",
+		success: function(response) {
+				let deptDropdown = $("#rempId");
+			deptDropdown.empty();
+			for (let key in response) {
+				deptDropdown.append('<option value="' + key + '">' + response[key] + '('+key+')</option>')
+			}
+		},
+		error: function() {
+			console.error("AJAX Error:", error);
+		}
+	});
+}
+export function popupEmployeeInName() {
+	$.ajax({
+		url: "/employee-timetracker/admin/employee/employee-outlist", 
+		type: "GET",
+		success: function(response) {
+				let deptDropdown = $("#rempId");
+			deptDropdown.empty();
+			for (let key in response) {
+				deptDropdown.append('<option value="' + key + '">' + response[key] + '('+key+')</option>')
+			}
+		},
+		error: function() {
+			console.error("AJAX Error:", error);
+		}
+	});
+}
+

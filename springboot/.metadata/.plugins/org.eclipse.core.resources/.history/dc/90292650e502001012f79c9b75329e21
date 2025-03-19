@@ -1,0 +1,29 @@
+$(document).ready(function() {
+	$("#addUser").click(function() {
+		checkUserExistense();
+	});
+});
+function checkUserExistense() {
+	$.ajax({
+		url: "/employee-timetracker/admin/user/get-user?username=" + document.getElementById("username").value,
+		type: "GET",
+		success: function(response) {
+			if (response.msg != null) {
+				document.getElementById("employeeEditDetails").style.display = "none";
+				alert(response.msg);
+			}
+			else {
+				document.getElementById("employeeEditDetails").style.display = "block";
+				popupEditDepartment(response["department"], response["role"]);
+				for (let key in response) {
+					if (key != "department")
+						document.getElementById(key).value = response[key];
+				}
+				//popupRole(document.getElementById("edepartment").value,"erole");
+			}
+		},
+		error: function() {
+			console.error("AJAX Error: " + error);
+		}
+	});
+}

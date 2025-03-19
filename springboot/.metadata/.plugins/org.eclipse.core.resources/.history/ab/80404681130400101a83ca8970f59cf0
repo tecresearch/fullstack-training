@@ -1,0 +1,20 @@
+package timetracker.user.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import timetracker.user.entity.TimeInfo;
+import timetracker.user.repository.TimeInfoRepository;
+
+@Service
+public class TimeInfoServiceImpl implements TimeInfoService
+{
+	@Autowired private TimeInfoRepository timeInfoRepository;
+
+	public void saveTimeOut(TimeInfo timeInfo) 
+	{
+		timeInfo.setOutime(null);
+		timeInfo.setDate(null);
+		timeInfoRepository.save(timeInfo);
+	}
+}

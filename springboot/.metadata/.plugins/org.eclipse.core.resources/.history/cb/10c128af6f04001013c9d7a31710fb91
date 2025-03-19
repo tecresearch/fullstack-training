@@ -1,0 +1,16 @@
+package timetracker.admin.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+import timetracker.admin.entity.Employee;
+
+public interface EmployeeRepository extends JpaRepository<Employee,Integer>  
+{
+
+	@Query("from Employee where status=:arg")
+	List<Employee> findAll(@Param("arg") String status);
+}

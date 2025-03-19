@@ -1,0 +1,12 @@
+package timetracker.user.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import timetracker.user.service.TimeInfoService;
+
+@Controller
+public class TimeInfoController 
+{
+	@Autowired private TimeInfoService timeInfoService;
+}

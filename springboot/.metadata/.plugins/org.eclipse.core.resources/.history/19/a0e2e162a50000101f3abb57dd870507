@@ -1,0 +1,21 @@
+function loadEmployee(employeeDetails) {
+	$.ajax({
+		url: "/employee-timetracker/admin/employee/get-employee?eid=" + document.getElementById("editEid").value,
+		type: "GET",
+		success: function(response) {
+			if (response.msg != null) {
+				document.getElementById(employeeDetails).style.display = "none";
+				alert(response.msg);
+			}
+			else {
+				document.getElementById(employeeDetails).style.display = "block";
+				for (let key in response) {
+					document.getElementById(key).value = response[key];
+				}
+			}
+		},
+		error: function() {
+			console.error("AJAX Error: " + error);
+		}
+	});
+}

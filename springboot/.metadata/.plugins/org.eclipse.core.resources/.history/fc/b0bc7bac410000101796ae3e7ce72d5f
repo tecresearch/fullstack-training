@@ -1,0 +1,7 @@
+package timetracker.admin.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import timetracker.admin.entity.Department;
+
+public interface DepartmentRepository extends JpaRepository<Department,Integerr}

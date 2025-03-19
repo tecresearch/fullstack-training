@@ -1,0 +1,46 @@
+package com.cetpa;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+
+@Entity
+public class Department 
+{
+	@Id
+	private int aid;
+	private String cardno;
+	@OneToOne(cascade = CascadeType.ALL)
+	private Employee person;
+	public Department() {}
+	public Department(int aid, String cardno, Employee person) 
+	{
+		this.aid = aid;
+		this.cardno = cardno;
+		this.person = person;
+	}
+	public int getAid() {
+		return aid;
+	}
+	public void setAid(int aid) {
+		this.aid = aid;
+	}
+	public String getCardno() {
+		return cardno;
+	}
+	public void setCardno(String cardno) {
+		this.cardno = cardno;
+	}
+	public Employee getPerson() {
+		return person;
+	}
+	public void setPerson(Employee person) {
+		this.person = person;
+	}
+	public String toString() 
+	{
+		return "AdharCard [aid=" + aid + ", cardno=" + cardno + ", person=" + person + "]";
+	}
+	
+}

@@ -1,0 +1,26 @@
+<div class="modal fade" id="employeeTimeInModal" tabindex="-1" aria-labelledby="employeeTimeInModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content col-8">
+			<div class="modal-header bg-primary text-white">
+				<h5 class="modal-title" id="employeeTimeInModalLabel">Update Employee Time In</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form action="/employee-timetracker/user/time/update-timein">
+					<div class="row my-3">
+						<div class="col-12">
+							<label class="form-label">Select Date</label>
+							<input type="date" id="date" name="date">
+						</div>
+					</div>	
+					<div class="row my-3">	
+						<div class="col-12">
+							<button type="submit" class="btn btn-success w-100">Get Report</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,24 @@
+1741159269146	Rename resource 'home.jsp'
+1741159644954	Rename resource 'user-header.jsp'
+1741159796234	Rename resource 'footer.jsp'
+1741159804364	Rename resource 'header.jsp'
+1741159913528	Rename resource 'login-form.jsp'
+1741159920780	Rename resource 'authenticate-user.jsp'
+1741159928394	Rename resource 'logout-success.jsp'
+1741159936079	Rename resource 'session-expire.jsp'
+1741159947870	Rename resource 'registration-form.jsp'
+1741159955868	Rename resource 'registration-success.jsp'
+1741161576267	Delete element
+1741242761076	Rename resource 'show-balance.jsp'
+1741242767702	Rename resource 'show-balance.htm'
+1741242782062	Rename resource 'statement-view.jsp'
+1741244343846	Rename resource 'deposit-money-form.jsp'
+1741244360235	Rename resource 'deposit-money-success.jsp'
+1741244998921	Rename resource 'withdraw-money-form.jsp'
+1741245006499	Rename resource 'withdraw-money-success.jsp'
+1741246091642	Rename resource 'transfer-money-form.jsp'
+1741246099269	Rename resource 'transfer-money-form2.jsp'
+1741246107158	Rename resource 'transfer-money-success.jsp'
+1741246619295	Copy packages
+1741246638112	Copy folders
+1741246651191	Copy folders

@@ -1,0 +1,9 @@
+import { popupEmployeeName } from './namepopup.js';
+$(document).ready(function() {
+	$("#recordTimeOut").click(function() {
+		popupEmployeeInName()
+	});
+	$("#recordTimeIn").click(function() {
+			popupEmployeeOutName()
+	});
+});

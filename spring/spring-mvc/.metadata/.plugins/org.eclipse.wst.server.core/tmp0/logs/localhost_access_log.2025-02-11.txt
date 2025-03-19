@@ -1,0 +1,17 @@
+127.0.0.1 - - [11/Feb/2025:12:30:29 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:12:30:32 +0530] "GET /frontcontroller-demo/ HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:12:30:59 +0530] "GET /frontcontroller-demo/ HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:12:31:17 +0530] "GET /frontcontroller-demo/demo HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:12:33:24 +0530] "GET /frontcontroller-demo/cetpa HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:12:33:31 +0530] "GET /frontcontroller-demo/cetpaa HTTP/1.1" 404 682
+127.0.0.1 - - [11/Feb/2025:13:01:57 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:13:01:59 +0530] "GET /request-response/ HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:13:02:10 +0530] "GET /request-response/hello HTTP/1.1" 200 303
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:13:03:31 +0530] "GET /request-response/hello HTTP/1.1" 200 303
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:13:03:53 +0530] "GET /request-response/sayhello?str=Amit HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:13:04:47 +0530] "GET /request-response/sayhello?str=Amit HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:13:05:03 +0530] "GET /request-response/sayhello?str=Amit HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:13:09:12 +0530] "GET /request-response/hello HTTP/1.1" 200 303
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:13:09:15 +0530] "GET /request-response/sayhello?str=Amit HTTP/1.1" 200 105
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:13:11:56 +0530] "GET /request-response/hello HTTP/1.1" 200 303
+0:0:0:0:0:0:0:1 - - [11/Feb/2025:13:13:51 +0530] "GET /request-response/sayhello?str=Kapil HTTP/1.1" 200 106

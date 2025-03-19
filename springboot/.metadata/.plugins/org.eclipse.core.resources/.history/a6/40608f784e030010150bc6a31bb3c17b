@@ -1,0 +1,17 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:insert="@{user/user-navbar}"></div> 
+<style>
+    .ts{
+    	margin-top:7vw;
+		color:gray;
+    }	 
+	h2 {
+	  text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+	}
+</style>	
+<body class="ubg-image">
+	<div class="hero ts">
+	    <h2 style="font-size:2.5vw">Welcome to the User Home Panel</h2>
+	 </div>	 
+</body>
+</html>

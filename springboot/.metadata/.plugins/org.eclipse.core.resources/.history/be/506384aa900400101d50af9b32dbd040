@@ -1,0 +1,5 @@
+package timetracker.user.service;
+
+public interface ReportServiceImpl 
+{
+}

@@ -1,0 +1,69 @@
+<div class="modal fade" id="editEmployeeModal" tabindex="-1" aria-labelledby="editEmployeeModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content col-8">
+			<div class="modal-header bg-primary text-white">
+				<h5 class="modal-title" id="editEmployeeModalLabel">Edit Employee</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form action="update-employee">
+					<div class="row my-3">
+						<div class="col-12">
+							<label class="form-label">Enter Employee Id</label>
+							<input type="text" id="editEid" name="eid" class="form-control" required>
+						</div>
+					</div>
+					<div class="row my-3">
+						<div class="col-12 text-center">
+							<button type="button" id="loadEditEmployee" class="btn btn-success w-100">Get Employee
+								Details</button>
+							<br><br>
+							<span class="text-danger" id="messageEdit"></span>
+						</div>
+					</div>
+					<div class="table" id="employeeEditDetails" style="display: none">
+						<table class="table table-bordered">
+							<tr>
+								<th><label for="firstname">Edit First Name</label></th>
+								<td><input type="text" id="firstname" name="firstname" class="form-control" required></td>
+							</tr>
+							<tr>
+								<th>Edit Last Name</th>
+								<td><input type="text" id="lastname" name="lastname" class="form-control" required></td>
+							</tr>
+							<tr>
+								<th>Edit Email Id</th>
+								<td><input type="text" id="email" name="email" class="form-control" required></td>
+							</tr>
+							<tr>
+								<th>Edit Phone number</th>
+								<td><input type="text" id="phone" name="phone" class="form-control" required></td>
+							</tr>
+							<tr>
+								<th>Edit Department</th>
+								<td><input type="text" id="department" name="department" class="form-control" required></td>
+							</tr>
+							<tr>
+								<th>Edit Role</th>
+								<td><input type="text" id="role" name="role" class="form-control" required></td>
+							</tr>
+							<tr>
+								<th>Edit Office timein</th>
+								<td><input type="text" id="timein" name="timein" class="form-control" required></td>
+							</tr>
+							<tr>
+								<th>Edit Office timeout</th>
+								<td><input type="text" id="timeout" name="timeout" class="form-control" required></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<button type="submit" class="btn btn-secondary w-100">Update Employee</button>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

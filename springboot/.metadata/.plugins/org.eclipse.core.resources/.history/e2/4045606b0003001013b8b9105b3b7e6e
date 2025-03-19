@@ -1,0 +1,20 @@
+/*$(document).ready(function() {
+	$("#addUser").click(function() {
+		alert("Ok")
+		checkUserExistense();
+	});
+});*/
+function checkUserExistense() {
+	alert("Ok")
+	$.ajax({
+		url: "/employee-timetracker/admin/user/get-user?username=" + document.getElementById("username").value,
+		type: "GET",
+		success: function(response) {
+			if(response["uid"]!=undefined)
+				alert("ok");
+		},
+		error: function() {
+			console.error("AJAX Error: " + error);
+		}
+	});
+}

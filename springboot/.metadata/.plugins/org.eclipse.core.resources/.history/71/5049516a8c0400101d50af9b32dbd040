@@ -1,0 +1,17 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:insert="~{@{user/user-navbar}}"></div> 
+<style>
+    .ts{
+    	margin-top:7vw;
+		color:red;
+    }	 
+	h1 {
+	  text-shadow: 10px 8px 5px rgba(0, 0, 0, 0.5);
+	}
+ </style>	
+ <body class="ubg-image">
+	<div class="hero ts">
+	    <h1 style="font-size:2.5vw">Employee Time Out has been recorded successfully</h1>
+	 </div>	
+ </body>
+</html>

@@ -1,0 +1,21 @@
+package timetracker.user.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import timetracker.user.entity.TimeInfo;
+import timetracker.user.service.TimeInfoService;
+
+@Controller
+public class TimeInfoController 
+{
+	@Autowired private TimeInfoService timeInfoService;
+	
+	@GetMapping("record-outtime")
+	public ModelAndView recordTimeOut(TimeInfo timeInfo)
+	{
+		timeInfoService.saveTimeOut(timeInfo);
+	}
+}

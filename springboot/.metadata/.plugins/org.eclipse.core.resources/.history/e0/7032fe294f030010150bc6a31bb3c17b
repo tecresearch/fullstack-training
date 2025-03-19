@@ -1,0 +1,11 @@
+<html xmlns:th="http://www.thymeleaf.org">
+ <body>	
+	<header>
+	       <h1>Employee Time Tracker</h1>
+	       <div class="search-bar">
+	           <input type="text" id="searchInput" placeholder="Search employee...">
+	           <button id="searchBtn">Search</button>
+	       </div>
+	   </header>
+   </body>
+</html>     

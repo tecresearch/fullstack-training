@@ -1,0 +1,13 @@
+export function loadEmployeeDelete() {
+	$.ajax({
+		url: "/employee-timetracker/admin/employee/get-employee-list",
+		type: "GET",
+		success: function(item) {
+			
+		},
+		error: function() {
+			console.error("AJAX Error: " + error);
+		}
+	});
+}
+//window.loadEmployeeDelete = loadEmployeeDelete; 
