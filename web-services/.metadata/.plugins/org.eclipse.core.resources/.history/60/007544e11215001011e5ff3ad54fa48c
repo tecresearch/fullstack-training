@@ -1,0 +1,13 @@
+package com.cetpa.services.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.cetpa.repositories.PatientRepository;
+import com.cetpa.services.PatientService;
+
+@Service
+public class PatientServiceImpl implements PatientService 
+{
+	@Autowired private PatientRepository patientRepository;
+}

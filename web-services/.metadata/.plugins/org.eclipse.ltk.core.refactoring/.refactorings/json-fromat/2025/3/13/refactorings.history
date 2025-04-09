@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;response-entity/src/main/java/com.cetpa&apos;&#x0D;&#x0A;- Original project: &apos;json-fromat&apos;&#x0D;&#x0A;- Destination element: &apos;response-entity/src/main/java/com.cetpa&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.cetpa.PersonController.java&#x0D;&#x0A;     com.cetpa.Person.java" description="Copy compilation units" destination="=response-entity/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.cetpa" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.cetpa{PersonController.java" element2="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.cetpa{Person.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1742798366345" units="2" version="1.0"/>
+</session>

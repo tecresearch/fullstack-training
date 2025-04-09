@@ -1,0 +1,27 @@
+package com.cetpa.services.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.cetpa.entities.Doctor;
+import com.cetpa.entities.Patient;
+import com.cetpa.repositories.DoctorRepository;
+import com.cetpa.repositories.PatientRepository;
+import com.cetpa.services.DoctorSuggessionService;
+
+@Service
+public class DoctorSuggessionServiceImpl implements DoctorSuggessionService
+{
+	@Autowired private PatientRepository patientRepository;
+	@Autowired private DoctorRepository doctorRepository;
+	
+	public List<Doctor> getDoctorList(int pid) 
+	{
+		Patient patient=patientRepository.findById(pid).orElse(null);
+		if(patient==null)
+			throw new PatientNotFoundException("Patient with id "+pid+" does not exist");
+		return null;
+	}
+}

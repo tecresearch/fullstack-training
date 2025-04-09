@@ -1,0 +1,5 @@
+package com.cetpa.controllers;
+
+public class DoctorController {
+
+}

@@ -1,0 +1,5 @@
+package com.cetpa.exception;
+
+public class ValidationResponse {
+
+}

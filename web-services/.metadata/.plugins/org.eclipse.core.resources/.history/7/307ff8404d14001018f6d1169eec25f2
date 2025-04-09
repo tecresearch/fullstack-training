@@ -1,0 +1,5 @@
+package com.cetpa.controller.advice;
+
+public class GlobalExceptionHandler {
+
+}

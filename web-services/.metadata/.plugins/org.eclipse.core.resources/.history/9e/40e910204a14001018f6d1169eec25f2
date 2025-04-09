@@ -1,0 +1,5 @@
+package com.cetpa.services.impl;
+
+public interface DoctorService 
+{
+}

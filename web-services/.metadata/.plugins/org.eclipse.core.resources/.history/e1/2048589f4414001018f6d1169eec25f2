@@ -1,0 +1,10 @@
+package com.cetpa.dto;
+
+public class EmployeeDto 
+{
+	private int empId;
+	private String empName;
+	private int empSalary;
+	private String deptName;
+	
+}

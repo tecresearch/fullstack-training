@@ -1,0 +1,27 @@
+package com.cetpa.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.cetpa.entity.Employee;
+import com.cetpa.repository.DepartmentRepository;
+import com.cetpa.repository.EmployeeRepository;
+import com.cetpa.service.EmployeeService;
+
+@Service
+public class EmployeeServiceImpl implements EmployeeService 
+{
+	@Autowired private EmployeeRepository employeeRepository;
+	@Autowired private DepartmentRepository departmentRepository;
+	
+	public void saveEmployee(Employee employee) 
+	{
+		employeeRepository.save(employee);
+		departmentRepository.updateTotalEmployees(employee.getDepartment().getDeptId());
+	}
+
+	public Employee getRecord(int eid) 
+	{
+		return employeeRepository.getEmployeeDetails(eid);
+	}
+}
