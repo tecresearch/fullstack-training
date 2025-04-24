@@ -1,4 +1,4 @@
-"# fullstack-training" 
+"# fullstack-training " 
 ## Learning Frameworks
 ```# Course Schedule with Topics and Explanations```
 ```
